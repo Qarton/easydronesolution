@@ -53,17 +53,17 @@ export default {
     articles: [
           {
             src: require('@/assets/img/img1.jpg'),
-            title: 'Photo 1',
+            title: 'Evènements sportifs ou de loisirs',
             text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
           },
           {
             src: require('@/assets/img/img2.jpg'),
-            title: 'Photo 2',
+            title: 'Valorisation de biens immobiliers',
             text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
           },
           {
             src: require('@/assets/img/img3.jpg'),
-            title: 'Photo 3',
+            title: 'Mise en valeur du patrimoine',
             text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
           },
         ]
