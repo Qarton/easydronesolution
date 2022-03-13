@@ -6,6 +6,7 @@
               :show-arrows="false"
                cycle
                hide-delimiters
+               :height="$vuetify.breakpoint.smAndDown ? 900 : 1080"
             >
                <v-carousel-item
                v-for="(slide, i) in slides"
@@ -14,7 +15,7 @@
                >
 
                 <v-theme-provider dark>
-                  <v-parallax :src="slide.src">
+                  <v-parallax :height="$vuetify.breakpoint.smAndDown ? 900 : 1080" :src="slide.src">
                     <v-container fill-height>
                       <v-row
                         align="center"
@@ -66,15 +67,15 @@ export default {
       slides: [
          {
             id:1,
-            src:require('@/assets/img/img1.jpg')
+            src:require('@/assets/img/bg1.jpg')
          },
          { 
             id:2,
-            src: require('@/assets/img/img2.jpg')
+            src: require('@/assets/img/bg2.jpg')
          },
          { 
             id:3,
-            src: require('@/assets/img/img3.jpg')
+            src: require('@/assets/img/bg3.jpg')
          }
       ]
     

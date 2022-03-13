@@ -3,11 +3,9 @@
     <v-main>
       <app-bar />
       <landing-page />
-      <div class="py-16"></div>
       <about-drone />
-      <div class="py-16"></div>
       <home-photo />
-      <div class="py-16"></div>
+      <contact-me/>
     </v-main>
   </v-app>
 </template>
@@ -17,6 +15,7 @@ import LandingPage from './components/LandingPage'
 import AboutDrone from './components/AboutDrone'
 import HomePhoto from './components/HomePhoto';
 import AppBar from './components/AppBar';
+import ContactMe from './components/ContactMe';
 
 export default {
   name: 'App',
@@ -25,7 +24,8 @@ export default {
     LandingPage,
     AboutDrone,
     HomePhoto,
-    AppBar
+    AppBar,
+    ContactMe
   },
 };
 </script>

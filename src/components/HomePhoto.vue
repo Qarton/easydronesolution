@@ -1,5 +1,7 @@
 <template>
-<section id="home-photo">
+<section
+class="back2 white--text"
+id="home-photo">
         <div class="py-12"></div>
 
         <v-container>
