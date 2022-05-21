@@ -1,8 +1,7 @@
 <template>
   <div>
     <v-app-bar 
-    app 
-    inverted-scroll
+    app
     color="back1"
     dark
     >
@@ -18,10 +17,10 @@
         <v-btn class="d-none d-md-block text-uppercase" text dark @click="$vuetify.goTo('#about-drone')">
           Présentation
         </v-btn>
-        <v-btn class="d-none d-md-block text-uppercase" text dark @click="$vuetify.goTo('#home-photo')">
+        <v-btn class="d-none d-md-block text-uppercase" text dark @click="navigateTo({name: 'photo'})">
           Exemples
         </v-btn>
-        <v-btn class="d-none d-md-block text-uppercase" text dark @click="$vuetify.goTo('#contact-me')">
+        <v-btn class="d-none d-md-block text-uppercase" text dark @click="navigateTo({name: 'contact'})">
           Contact
         </v-btn>
         <v-app-bar-nav-icon class="d-md-none" @click="drawer = true">
@@ -64,5 +63,10 @@ export default {
       drawer: false
     }
   },
+  methods: {
+    navigateTo (route) {
+      this.$router.push(route)
+    }
+  }
 }
 </script>
